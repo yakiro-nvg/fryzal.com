@@ -18,27 +18,25 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
+  title = "Chief Architect"
+  company = "FPT Global Automotive"
+  company_url = "https://www.fpt-software.com/industries/automotive/"
+  location = "Hanoi, Vietnam"
+  date_start = "2013-01-01"
   date_end = ""
   description = """
-  Responsibilities include:
-  
-  * Analysing
-  * Modelling
-  * Deploying
+  Driving force of the R&D in IVI Division, resolve technological challenges and pre-sales support.
+  From 2018, I tend to step back from most of the delivery activities and now focus on a new strategic
+  department for innovation duties.
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
+  title = "Solutions Architect"
+  company = "VTC Online"
   company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  location = "Hanoi, Vietnam"
+  date_start = "2009-01-01"
+  date_end = "2013-01-01"
+  description = """In-charged of engineering and architecture at VTC Game Studio."""
 
 +++

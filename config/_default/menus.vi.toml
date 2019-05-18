@@ -4,17 +4,17 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "Home"
+  name = "Trang chủ"
   url = "#about"
   weight = 10
 
 [[main]]
-  name = "Posts"
+  name = "Bài viết"
   url = "#posts"
   weight = 20
 
 [[main]]
-  name = "Contact"
+  name = "Liên hệ"
   url = "#contact"
   weight = 60
 
