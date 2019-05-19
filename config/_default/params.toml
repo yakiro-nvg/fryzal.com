@@ -64,6 +64,7 @@ appointment_url = ""
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
   {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/GiangYakiro"},
+  {icon = "facebook", icon_pack = "fab", name = "Fan Page", link = "https://www.facebook.com/Fryzal-Development-Blog-418475328731073"}
   ]
 
 # Display a map.
