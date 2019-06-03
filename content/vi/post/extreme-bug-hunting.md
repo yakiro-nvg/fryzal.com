@@ -1,7 +1,7 @@
 +++
 title = "Nào thì đi săn bug: phần 1"
 date = 2019-06-03
-draft = true
+draft = false
 authors = ["Giang 'Yakiro' Nguyen"]
 
 tags = ["bug-hunting", "fundamental"]
