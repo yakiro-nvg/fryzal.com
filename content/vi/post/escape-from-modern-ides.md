@@ -37,7 +37,7 @@ hiện tại thú thật là tôi chả tuyển được ai như thế cả. M�
 là phải đặc biệt lưu ý, nhưng không có gì thậm chí là 01 cái CV. Có lẽ thời điểm này,
 khi mà Unity đã quá mạnh thì cũng chẳng còn mấy ai đi nghiên cứu cơ sở nữa.
 
-Nhưng kệ, tôi vẫn có niềm tin là đâu đó vẫn có người quan tâm đến phát triển indie
+Nhưng kệ, tôi vẫn có niềm tin là đâu đó vẫn có người quan tâm đến phát triển in-house
 toolset, được may đo cho những bài toán đặc thù mà móng vuốt của Unity vẫn chưa, hoặc
 có thể nói là không bao giờ chạm tới được.
 
