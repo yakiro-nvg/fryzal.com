@@ -23,9 +23,11 @@ Sống ở trên đời, ai mà không miss deadline? Đồng ý, nhưng đôi k
 	- Công ty F tài trợ khủng bố ah?
 * etc.
 
-Nhiều nguyên nhân vãi chưởng ntn thế thì vấn đề nằm ở đâu?
+Đại khái là cái gì mà ta không chịu trách nhiệm, khách quan.
 
 {{< figure src="/img/parallel_development/salt_bae.gif" title="Phải thật là tinh tế" >}}
+
+Vấn đề nằm ở đâu?
 
 # Hạn chế Waterfall thôi
 
