@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Giang 'Yakiro' Nguyen
+name: Giang, Nguyen (Yakiro)
 
 # Username (this should match the folder name)
 authors:
@@ -14,7 +14,7 @@ role: Chief Architect
 
 # Organizations/Affiliations
 organizations:
-- name: FPT Global Automotive
+- name: Fpt Global Automotive
   url: "https://www.fpt-software.com/industries/automotive/"
 
 # Short bio (displayed in user profile at end of posts)
@@ -49,4 +49,4 @@ user_groups:
 - Researchers
 ---
 
-Kiến trúc sư trưởng với trên 10 năm kinh nghiệm. Hiện đang làm việc tại FPT Software, chuyên về mảng Automotive. Có kiến thức rộng và kỹ năng thành thạo với nhiều nhánh của khoa học máy tính. Bao gồm đồ hoạ máy tính, mạng, phát triển ngôn ngữ lập trình và trình biên dịch, phần mềm nhúng v.v. Có kinh nghiệm với toàn bộ hệ thống IVI từ tầng app, service, middleware cho đến BSP.
+Kiến trúc sư trưởng với trên 10 năm kinh nghiệm. Hiện đang làm việc tại Fpt Software, chuyên về mảng Automotive. Có kiến thức rộng và kỹ năng thành thạo với nhiều nhánh của khoa học máy tính. Bao gồm đồ hoạ máy tính, mạng, phát triển ngôn ngữ lập trình và trình biên dịch, phần mềm nhúng v.v. Có kinh nghiệm với toàn bộ hệ thống IVI từ tầng app, service, middleware cho đến BSP.

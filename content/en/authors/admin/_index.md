@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Giang 'Yakiro' Nguyen
+name: Giang, Nguyen (Yakiro)
 
 # Username (this should match the folder name)
 authors:
@@ -14,7 +14,7 @@ role: Chief Architect
 
 # Organizations/Affiliations
 organizations:
-- name: FPT Global Automotive
+- name: Fpt Global Automotive
   url: "https://www.fpt-software.com/industries/automotive/"
 
 # Short bio (displayed in user profile at end of posts)
@@ -50,4 +50,4 @@ user_groups:
 - Visitors
 ---
 
-Chief Architect with 10+ years of experience. Currently focused on the Automotive industry. R&D lead of IVI division at FPT Software. Having broad knowledge and skill in the computer science. Includes computer graphics, networking, compiler & programming language theory, embedded software etc. Experienced in full stack of IVI software system from the application, service, middleware to BSP layer.
+Chief Architect with 10+ years of experience. Currently focused on the Automotive industry. R&D lead of IVI division at Fpt Software. Having broad knowledge and skill in the computer science. Includes computer graphics, networking, compiler & programming language theory, embedded software etc. Experienced in full stack of IVI software system from the application, service, middleware to BSP layer.
