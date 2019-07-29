@@ -254,11 +254,13 @@ Giải pháp là đặt View state ở South Controllers.
 {{< figure src="/img/parallel_development/compass_view_state.png" >}}
 
 Về cơ bản, ta thêm một Redux store khác được dùng nội bộ bởi South Controller để chứa View state,
-từ ngoài nhìn vào thì vẫn như cũ thôi. Store này nhận vào một Action duy nhất là `new app state`,
-bên trong chứa State mới của phần nghiệp vụ. Như vậy tại South Reducer ta có cả `app state` lẫn
-`view state` từ đó reduce ra được view state mới. Những logic xử lý như view state cũ không phản
-ánh đúng với app state mới cũng nằm ở đây luôn (dangling selected song). Khi HMI spec thay đổi ta
-chỉ sửa lại cục South, không ảnh hưởng đến phần còn lại.
+từ ngoài nhìn vào thì vẫn như cũ thôi. Store này nhận vào một Action `NEW_APP_STATE`, bên trong
+chứa State mới của phần nghiệp vụ. Như vậy tại South Reducer ta có cả `app state` lẫn `view state`
+từ đó reduce ra được view state mới. Những logic xử lý như view state cũ không phản ánh đúng với
+app state mới cũng nằm ở đây luôn (dangling selected song). Khi HMI spec thay đổi ta chỉ sửa lại
+cục South, không ảnh hưởng đến phần còn lại.
+
+<iframe height="600px" width="100%" src="https://repl.it/@yakironvg/paralleldevhmistore?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 South Controller đã trở thành stateful, tuy nhiên cũng không tệ lắm:
 
