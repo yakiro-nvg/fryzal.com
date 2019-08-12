@@ -2,7 +2,7 @@
 title = "Tương lai của ngành xe"
 date = 2019-08-08
 draft = false
-authors = ["Giang, Nguyen (Yakiro)"]
+authors = ["Nguyen, Giang (Yakiro)"]
 
 tags = ["decision", "innovation"]
 summary = "Khi người ta không còn chọn xe chỉ để lái"
