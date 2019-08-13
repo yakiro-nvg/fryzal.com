@@ -261,8 +261,8 @@ cài đặt trên cùng OS nên có thể dùng những cơ chế của OS để
 
 Lưu ý là "firewall" ở đây có tính minh hoạ, giao thức giữa ECU và gateway có thể không phải Ethernet, và
 ECU cũng có thể quá dumb nên không có firewall. Mấu chốt ở đây là kết nối giữa ECU và gateway phải được
-giới hạn sao cho chỉ đường đi qua proxy. Nếu kết nối đó là serial thì đơn giản là cấp quyền sao cho duy
-nhất cái proxy được dùng thôi chẳng hạn.
+giới hạn để chỉ còn đường đi qua proxy. Nếu kết nối đó là serial thì đơn giản là cấp quyền sao cho duy nhất
+cái proxy được dùng thôi chẳng hạn.
 
 **Ưu điểm:**
 
