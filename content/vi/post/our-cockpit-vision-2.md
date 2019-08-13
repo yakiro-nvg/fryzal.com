@@ -1,7 +1,7 @@
 +++
 title = "Khai phá dữ liệu trên xe"
-date = 2019-08-12
-draft = true
+date = 2019-08-13
+draft = false
 authors = ["Nguyen, Giang (Yakiro)"]
 
 tags = ["decision", "innovation"]
