@@ -175,7 +175,7 @@ phía Nam biên giới.
 Thôi vứt mẹ Mexico của em đi, đã dốt không làm được thì bảo luôn lại còn bày đặt văn học. Phía Nam
 biên giới là cục MCU Gateway, đi xa hơn nữa ta gặp CAN bus và lấy được data em cần nhé. Thế rồi nàng
 lăn ra khóc lóc thảm thiết, nhưng mà anh ơi em không biết lập trình MCU, lại cũng không biết đọc CAN
-spec, ngày mai release rồi em biết phải làm sao.
+spec, ngày mai release rồi em biết phải làm sao, huhu.
 
 # SEAMLESS architecture
 
