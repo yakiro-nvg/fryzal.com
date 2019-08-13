@@ -299,7 +299,7 @@ thì mời anh show token ra.
 
 Tuỳ vào các ràng buộc khác nhau mà hệ thống có thể kết hợp cả phương án (1) lẫn phương án (2), vì thực
 ra chúng nó cũng không phải loại trừ lẫn nhau. Ngoài ra thì cũng có nhiều biến thể khác cho phù hợp với
-thực tế, ví dụ như thay vì data route qua proxy thì ta có thể cho phép gateway pull permission database
+thực tế, ví dụ như thay vì data route qua proxy thì ta có thể cho phép gateway pull permissions database
 từ trusted process trên ECU chẳng hạn. Miễn sao API đưa ra cho người lập trình ứng dụng vẫn đồng nhất.
 Tức là từ góc độ của họ thì bên dưới cơ chế security vận hành thế nào họ không cần quan tâm.
 
