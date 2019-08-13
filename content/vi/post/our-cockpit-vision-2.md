@@ -100,7 +100,7 @@ là nó kiểu `OBD Over-The-Air`.
 Chịu ảnh hưởng của IoT, người ta nhận thấy khối gateway này là nơi tuyệt vời để làm trung gian
 truyền nhận dữ liệu giữa tất cả các domain trên xe và nhận làm những task không tên, không biết
 cho vào đâu như Analytic, hay ứng dụng mang tính kịch bản kiểu đỗ xe ngoài bãi, trời mưa thì tự
-kéo của kính lên chẳng hạn.
+kéo cửa kính lên chẳng hạn.
 
 {{< figure src="/img/our_cockpit_vision_2/gen-3.png" title="Mạng thế hệ thứ ba" >}}
 
