@@ -345,7 +345,7 @@ Với life-cycle phức tạp. Một số microservice không quan trọng có t
 
 Thậm chí một microservice có thể được migrate online từ cục đang có tải CPU cao sang cục khác đỡ bận rộn
 hơn. Nên không thể fix cứng giao thức và địa chỉ của chúng từ khi compile như thằng AUTOSAR được. SEAMLESS
-gateway sẽ đứng ra điều phối và resolve ra "config" ngay khi trong khi xe đang chạy.
+gateway sẽ đứng ra điều phối và resolve ra "config" in runtime.
 
 AUTOSAR cũng thiết kế với mindset "tin nhau là chính", nên trong câu chuyện VFB không có vấn đề security.
 Đây thực ra cũng là câu chuyện của mấy cái mạng broadcast chuyên cho ô tô như CAN vs LIN etc. Một khi được
