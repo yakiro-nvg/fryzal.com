@@ -305,6 +305,74 @@ Tức là từ góc độ của họ thì bên dưới cơ chế security vận 
 
 **Đừng có tự dưng đổi mẹ cái API đi là được.**
 
+# Sao không dùng AUTOSAR?
+
+Tôi có nhận được câu hỏi rất hay là AUTOSAR có VFB, vậy sao ta không dùng?
+
+## Giải ngố về VFB
+
+Do bài viết có hướng đến cả hạng "gà" về lập trình ô tô, nên ở đây xin phép được nói qua một chút về VFB
+để tiện theo dõi. Một trong những nguyên tắc của thằng AUTOSAR là cho phép các component có thể được deploy /
+relocate thoải mái lên các ECU khác nhau.
+
+{{< figure src="/img/our_cockpit_vision_2/autosar-vfb.png" title="AUTOSAR Virtual Function Bus, <a href='https://hpi.de/fileadmin/user_upload/fachgebiete/giese/Ausarbeitungen_AUTOSAR0809/NicoNaumann_RTE_VFB.pdf'>Nico Naumann</a>" >}}
+
+Đứng ở góc độ người lập trình component, cái ta quan tâm là chức năng và giao tiếp giữa các component ở mức
+logic. Do đó, với mỗi component ta sẽ định nghĩa các cổng giao tiếp, rồi nối chúng lại với nhau bằng cái gọi
+là `virtual function bus`. Bus này là ảo và chỉ tồn tại trong quá trình design. Khi deploy lên hệ thống thật
+thì AUTOSAR sẽ thay thế những đặc tả ở mức VFB bằng các kết nối thực sự, là cái cục RTE, cục này được generate
+tự động dựa trên file cấu hình.
+
+Nếu câu hỏi là VFB có hay ho không, thì khẳng định luôn là hay, từ cách thiết kế để người lập trình component
+không cần quan tâm đến CAN, LIN etc. cho đến khả năng relocate component sang ECU khác đều rất hay. SEAMLESS
+cũng chia sẻ nhiều phương châm thiết kế với AUTOSAR ở khoản này.
+
+**Tuy nhiên SEAMLESS không phải được tạo ra nhằm kill AUTOSAR.**
+
+## Hạn chế của AUTOSAR
+
+AUTOSAR có nhiều vấn đề khi câu chuyện car as software platform xuất hiện.
+
+Các ECU chạy AUTOSAR hầu hết có phần cứng hạn chế, và chịu nhiều ràng buộc chặt chẽ về safety, latency etc.
+Vì vậy quá trình resolve từ VFB sang RTE được thực hiện offline. Một khi đã có RTE thì err... nó là code C.
+Code này được compile thành ứng dụng và không thể thay đổi trừ khi ta rebuild và flash lại con ECU.
+
+Với SEAMLESS, mục tiêu của ta là car as software platform. Các component của SEAMLESS được thiết kế theo
+hướng microservice, nó sẽ gần với lập trình ứng dụng hiện đại trên web / mobile hơn là embedded. SEAMLESS
+component được deploy chủ yếu trên các domain như Telematic, ADAS, Autonomous Driving và Infotainment etc.
+Với life-cycle phức tạp. Một số microservice không quan trọng có thể bị kill khi thiếu tài nguyên, tuỳ vào
+độ ưu tiên và policy của hệ thống.
+
+Thậm chí một microservice có thể được migrate online từ cục đang có tải CPU cao sang cục khác đỡ bận rộn
+hơn. Nên không thể fix cứng giao thức và địa chỉ của chúng từ khi compile như thằng AUTOSAR được. SEAMLESS
+gateway sẽ đứng ra điều phối và resolve ra "config" ngay khi trong khi xe đang chạy.
+
+AUTOSAR cũng thiết kế với mindset "tin nhau là chính", nên trong câu chuyện VFB không có vấn đề security.
+Đây thực ra cũng là câu chuyện của mấy cái mạng broadcast chuyên cho ô tô như CAN vs LIN etc. Một khi được
+chạm vào bus thì ra thích đọc gì, gửi gì đi là tuỳ tâm. SEAMLESS thì API có permission, không được grant
+quyền thì khỏi dùng API.
+
+Ngoài ra thì còn một số lý do khác, ví dụ như dùng AUTOSAR thì phải chơi kiểu AUTOSAR, thằng này nó force
+khá chặt và dựa nhiều vào tool khiến cho việc sử dụng những stack khác, ví dụ như Node chẳng hạn là không
+khả thi. Chưa thấy thằng AUTOSAR nào hỗ trợ Javascript, hội developer mì ăn liền không thích điều này. Vì
+ứng dụng ở cái thời đại đó có khi chỉ đơn giản là một đoạn script kiểu trời mưa lúc xe đang đỗ ngoài trời
+thì kéo cái cửa kính lên chẳng hạn. Những ứng dụng kiểu này có thể được download về và chạy luôn, trong khi
+với AUTOSAR ta phải rebuild và reflash cái gì đấy, mỗi loại xe một cục binary khác nhau nhé :)
+
+## SEAMLESS conflict với AUTOSAR?
+
+Tôi cũng nhận được một câu hỏi khác đại ý CAN là broadcast, thằng nhận tự quyết định xem có liên quan gì
+đến nó không. Trong khi SEAMLESS proxy lại có nhiệm vụ routing data đến đúng thằng đang cần. Ngoài ra thì
+CAN làm gì có permission? Câu này nói chung không hỏi về AUTOSAR nhưng thôi trả lời luôn vào đây cho cùng
+context. CAN vs LIN gì đó là việc của thằng AUTOSAR, những domain mà đội lập trình ứng dụng bình thường
+không quan tâm, và cũng không phải scope của SEAMLESS. Central Gateway nó là `gateway`, không phải `switch`.
+Nó có nhiệm vụ phân tích cái đống tín hiệu CAN, LIN, BLE etc. và cung cấp API dưới dạng thông tin.
+
+* Vận tốc xe, góc lái, đèn xi nhan là thông tin.
+* Còn CAN frame thì dek phải thông tin.
+
+**Mấy thằng như CAN, LIN etc. không phải API trong context của SEAMLESS.**
+
 # Fun Facts
 
 ## Bài viết có đạo tý văn của Murakami
