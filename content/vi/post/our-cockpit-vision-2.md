@@ -4,7 +4,7 @@ date = 2019-08-13
 draft = false
 authors = ["Nguyen, Giang (Yakiro)"]
 
-tags = ["decision", "innovation"]
+tags = ["decision", "innovation", "seamless", "autosar"]
 summary = "SEAMLESS, kiến trúc để vượt qua giới hạn"
 +++
 
