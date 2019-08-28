@@ -373,6 +373,13 @@ Nó có nhiệm vụ phân tích cái đống tín hiệu CAN, LIN, BLE etc. và
 
 **Mấy thằng như CAN, LIN etc. không phải API trong context của SEAMLESS.**
 
+## Adaptive AUTOSAR?
+
+Theo trend tự hành với car as software platform thì AUTOSAR cũng có một món vũ khí mới là thằng Adaptive
+AUTOSAR. Hướng đến fast ECU ở các SEAMLESS domain. Hiện nay tôi cũng chưa nắm được nhiều thông tin về nó,
+nhưng tìm hiểu sơ thì thấy khá ổn. Với bề dày của tổ chức AUTOSAR thì khả năng Adaptive AUTOSAR trở thành
+chuẩn thống trị là rất cao. Anh em mà có nghiên cứu về SEAMLESS thì nên tính tới nó trong bức tranh của mình.
+
 # Fun Facts
 
 ## Bài viết có đạo tý văn của Murakami
@@ -383,6 +390,6 @@ Nó có nhiệm vụ phân tích cái đống tín hiệu CAN, LIN, BLE etc. và
 
 Ngoài việc được đặt cho tên kiến trúc heterogeneous app, nó còn được dùng làm tên dự án Cockpit thế hệ
 mới ở công ty F. Lúc đầu vì uống nhiều thuốc của các anh Silicon Vendors quá nên định đặt là `hyper
-application framework`. Nhưng sau nhận ra là mặc dù Hypervisor là platform tuyệt vời để làm mấy trò này,
-nhưng thực tế nó không couple vào Hypervisor. Tức là ta vẫn có thể làm heterogeneous app mà không cần
-đến Hypervisor nên thôi đổi tên cho đỡ hiểu nhầm.
+application framework`. Nhưng sau nhận ra là mặc dù hypervisor là platform tuyệt vời để làm mấy trò này,
+nhưng thực tế nó không couple vào hypervisor. Tức là ta vẫn có thể làm heterogeneous app mà không cần
+đến hypervisor nên thôi đổi tên cho đỡ hiểu nhầm.
