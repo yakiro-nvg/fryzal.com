@@ -2,7 +2,7 @@
 title = "Phát triển song song"
 date = 2019-07-28
 draft = false
-authors = ["Nguyen, Giang (Yakiro)"]
+authors = ["Nguyen, Giang (G. Yakiro)"]
 
 tags = ["architecture", "productivity"]
 summary = "Đừng miss deadline vì chờ đợi!"

@@ -2,7 +2,7 @@
 title = "Escape from modern IDEs"
 date = 2019-05-16
 draft = false
-authors = ["Nguyen, Giang (Yakiro)"]
+authors = ["Nguyen, Giang (G. Yakiro)"]
 
 tags = ["tool", "architecture"]
 summary = "How to build a rich IDE without Microsoft-class engineers?"

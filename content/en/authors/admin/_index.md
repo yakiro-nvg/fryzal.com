@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Nguyen, Giang (Yakiro)
+name: Nguyen, Giang (G. Yakiro)
 
 # Username (this should match the folder name)
 authors:

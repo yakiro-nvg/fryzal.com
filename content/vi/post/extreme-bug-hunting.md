@@ -2,7 +2,7 @@
 title = "Nào thì đi săn bug: phần 1"
 date = 2019-06-03
 draft = false
-authors = ["Nguyen, Giang (Yakiro)"]
+authors = ["Nguyen, Giang (G. Yakiro)"]
 
 tags = ["bug-hunting", "fundamental"]
 summary = "Debug qua đường email và cái kết"

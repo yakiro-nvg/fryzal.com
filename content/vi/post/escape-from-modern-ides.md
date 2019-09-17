@@ -2,7 +2,7 @@
 title = "Đào thoát khỏi IDE"
 date = 2019-05-16
 draft = false
-authors = ["Nguyen, Giang (Yakiro)"]
+authors = ["Nguyen, Giang (G. Yakiro)"]
 
 tags = ["tool", "architecture"]
 summary = "Làm IDE ngay cả khi bạn không phải là kỹ sư của Microsoft?"

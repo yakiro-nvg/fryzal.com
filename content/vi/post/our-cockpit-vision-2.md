@@ -2,7 +2,7 @@
 title = "Khai phá dữ liệu trên xe"
 date = 2019-08-13
 draft = false
-authors = ["Nguyen, Giang (Yakiro)"]
+authors = ["Nguyen, Giang (G. Yakiro)"]
 
 tags = ["decision", "innovation", "seamless", "autosar"]
 summary = "SEAMLESS, kiến trúc để vượt qua giới hạn"
