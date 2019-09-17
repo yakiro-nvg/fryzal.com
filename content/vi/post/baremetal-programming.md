@@ -4,7 +4,7 @@ date = 2019-09-17
 draft = false
 authors = ["Nguyen, Giang (G. Yakiro)"]
 
-tags = ["bare-metal", "fundamental"]
+tags = ["bare-metal", "fundamental", "baby-programmer"]
 summary = "Học lập trình \"cơ sở\", để cho vui"
 +++
 
