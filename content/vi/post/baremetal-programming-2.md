@@ -1,7 +1,7 @@
 +++
 title = "BMPM #2: C, ABI và ARMv8"
 date = 2019-09-18
-draft = true
+draft = false
 authors = ["Nguyen, Giang (G. Yakiro)"]
 
 tags = ["bare-metal", "fundamental", "baby-programmer"]
