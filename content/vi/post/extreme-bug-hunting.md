@@ -48,35 +48,35 @@ Bị crash ⇒ xin thêm crash dump về đọc thì thấy.
 
 `signal 11 (Segmentation fault), fault addr 0x0000000c`
 
-Địa chỉ `0xC` là quá thấp nên có thể hiểu lỗi ở đây là do truy cập vào `NULL pointer`. Nói
-thêm một chút chỗ này vì độc giả của blog có vẻ có nhiều newbie. `NULL` thường được hiểu là
-bằng `0x0`, theo quy ước này thì OS sẽ không bao giờ cấp phát một vùng nhớ với địa chỉ `0x0`.
+Địa chỉ `0xC` là quá thấp nên có thể hiểu lỗi ở đây là do truy cập vào NULL pointer. Nói
+thêm một chút chỗ này vì độc giả của blog có vẻ có nhiều newbie. NULL thường được hiểu là
+bằng 0x0, theo quy ước này thì OS sẽ không bao giờ cấp phát một vùng nhớ với địa chỉ 0x0.
 Vì vậy ta có thể dùng giá trị này để đánh dấu một pointer không hợp lệ, không trỏ đến cái gì
-hoặc đã bị free. Việc truy cập vào địa chỉ `0x0` này sẽ dẫn đến crash chương trình.
+hoặc đã bị free. Việc truy cập vào địa chỉ 0x0 này sẽ dẫn đến crash chương trình.
 
 **Tuy nhiên địa chỉ được báo lỗi thường sẽ không phải 0x0.**
 
 Việc bắt được cái lỗi truy cập này do CPU thực hiện, tức là nó ở mức assembly. Cách check thì
 tuỳ loại CPU nhưng về cơ bản là ta đánh dấu một số vùng trong address space là hợp lệ, chạy
 ra ngoài là đứt. Nó hoàn toàn không hiểu gì về C/C++ hay những cấu trúc phức tạp. Thực tế hiếm
-khi ta truy cập vào địa chỉ `0x0`, nhất là khi nó trỏ đến class hoặc struct. Khi viết `p->member`
+khi ta truy cập vào địa chỉ 0x0, nhất là khi nó trỏ đến class hoặc struct. Khi viết `p->member`
 thì compiler sẽ gen ra assembly để truy cập đến địa chỉ `p + member_offset`. Và khi crash thì
 cái địa chỉ được báo sẽ là địa chỉ thực tế. Trừ khi debugger đủ thông minh để diễn dịch lại
-thành `NULL` còn không thì cứ thấy address thấp khoảng vài chục đến vài trăm bytes tuỳ class
-thì cứ hiểu nó là `NULL`.
+thành NULL còn không thì cứ thấy address thấp khoảng vài chục đến vài trăm bytes tuỳ class
+thì cứ hiểu nó là NULL.
 
 Ok, lan man một chút. Quay về câu chuyện thì trong các thể loại bug liên quan đến memory thì
-`NULL` là thể loại phải nói là dễ thở nhất. Với các vùng nhớ khác `NULL` thì có vô số khả năng
-xảy ra. Chứ với `NULL` thì đơn giản là ông code không chịu check đã truy cập rồi, phải không?
+NULL là thể loại phải nói là dễ thở nhất. Với các vùng nhớ khác NULL thì có vô số khả năng
+xảy ra. Chứ với NULL thì đơn giản là ông code không chịu check đã truy cập rồi, phải không?
 
 # Cú lừa của compiler
 
 Bởi vì ta không có source cho nên việc phán đoán chương trình chết cụ thể ở dòng nào hơi chuối
-tý. Lội crash dump rồi xem mấy cái biến được pass vào ra sao, có cái gì `NULL` không. Do thiếu
-debug symbol nên ta không thể print trực tiếp giá trị các biến bằng tên như `index` hay `this`
+tý. Lội crash dump rồi xem mấy cái biến được pass vào ra sao, có cái gì NULL không. Do thiếu
+debug symbol nên ta không thể print trực tiếp giá trị các biến bằng tên như index hay `this`
 được. Thay vào đó ta lôi manual của ARM check xem theo calling convention thì mấy cái biến đấy
 nó đưa cho function qua đường nào. May quá, ít tham số nên nó vứt hết vào register, check phát
-thì thấy `this` đang là `NULL` luôn. Xời ơi, dễ vãi loz.
+thì thấy `this` đang là NULL luôn. Xời ơi, dễ vãi loz.
 
 Và code thì nó đang như thế này.
 
@@ -112,21 +112,21 @@ cần điều tra tiếp tại sao `!this` lại được compiler hiểu là `a
 ---
 
 Đi từ C++ standard, ta phát hiện được một điểm là C++ nó yêu cầu `this` không bao giờ được phép
-`NULL`. Tức là khi ta đang ở trong method, ta luôn có thể truy cập đến nó mà không cần tư duy là
-liệu nó có `NULL` hay không. Tiện thể, chả hiểu sao các boss không cho `this` thành reference
-luôn mà lại đẻ ra cái thể loại *pointer never be `NULL`* này confuse vãi đái.
+NULL. Tức là khi ta đang ở trong method, ta luôn có thể truy cập đến nó mà không cần tư duy là
+liệu nó có NULL hay không. Tiện thể, chả hiểu sao các boss không cho nó thành reference luôn mà
+lại đẻ ra cái thể loại *pointer never be NULL* này confuse vãi đái.
 
-Bởi vì `this` không thể `NULL`, cho nên mặc dù `this` không phải là constant, nhưng `!this` lại là
-constant, và giá trị của biểu thức này được biết ngay từ lúc compile là `false`. Cái trò biến biểu
+Bởi vì `this` không thể NULL, cho nên mặc dù `this` không phải là constant, nhưng `!this` lại là
+constant, và giá trị của biểu thức này được biết ngay từ lúc compile là false. Cái trò biến biểu
 thức thành constant này trong lý thuyết compiler nó gọi là [constant folding](https://en.wikipedia.org/wiki/Constant_folding). Kiểu `1 + 1` thì lúc dell nào chả bằng `2`, tính luôn cho nó vui. Mà tiện đã fold `!this` thành
-`false` rồi thì `if (false)` cho đi luôn chứ để làm gì.
+false rồi thì `if (false)` cho đi luôn chứ để làm gì.
 
 # Chứng minh
 
 Sau khi "có vẻ" đã tìm được root cause, ta cần tái hiện và tìm counter evidence cũng như gợi ý
 cách sửa. Dựa trên luận điểm `!this` là constant, nếu ta check kiểu khác thì compiler sẽ không
 optimize được nữa và chương trình sẽ chạy như mong muốn. Tuy nhiên để fix triệt để lỗi này thì code
-cần theo C++ standard, tức là phải check `NULL` trước khi gọi method chứ không phải vào method rồi
+cần theo C++ standard, tức là phải check NULL trước khi gọi method chứ không phải vào method rồi
 lại đi check `!this`.
 
 Phát đầu tiên.
