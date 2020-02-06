@@ -63,7 +63,7 @@ có binary translator, tức là nó có thể dịch mã máy từ ARMvX sang x
 dịch. Ngoài ra khi sử dụng trên Linux thì nó sẽ chơi với KVM (một con hypervisor ở kernel-mode)
 để trap những lệnh đọc ghi vào register qua MMU.
 
-Để hiểu rõ hơn tại sao thậm ta cần hiểu nguyên tắc thiết kế của CPU. CPU dịch nôm là bộ xử lý
+Để hiểu rõ hơn tại sao chậm ta cần hiểu nguyên tắc thiết kế của CPU. CPU dịch nôm là bộ xử lý
 trung tâm, nhiệm vụ chính của nó là xử lý logic. Tức là kiểu nếu thế này thì thế kia, và nó được
 tối ưu cho riêng việc đấy. Nếu ông nào còn nhớ thì có 2 con bug về kiến trúc của CPU là Meltdown
 & Spectre, lợi dụng các tối ưu liên quan đến if-else (branch predictor) và cache latency để khai
