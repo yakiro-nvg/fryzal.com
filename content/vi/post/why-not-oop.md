@@ -38,10 +38,10 @@ tý là thánh chiến vs tử vì đạo, dị giáo đồ bloh blah. Đập nh
 
 Bước đầu tiên để nắm bắt vận mệnh, khai phá thiên cơ là ta phải đạt được trạng thái tâm tĩnh
 như nước, sẵn sàng tiếp nhận những quan điểm thoạt nghe như củ cải. Không cùng đạo, khó nói chuyện
-thì chỉ là hạng phàm phu tục tử. Anh em có thể tập thiền, tập yoga hay dán băng dính vào mồm chơi
-DotA thì tuỳ. Như mình thì pro rồi nên không cần. Ngoài ra thì buông đao đồ tể, lập tức thành phật
-cũng là một phương pháp. Anh em có thể học Java, trở thành fanboy OOP rồi một ngày bỗng nhưng nhận
-ra Java như loz.
+thì chỉ là hạng phàm phu tục tử. Phải khiêm tốn, anh em có thể tập thiền, tập yoga hay dán băng dính
+vào mồm chơi DotA thì tuỳ. Như mình thì pro rồi nên không cần. Ngoài ra thì buông đao đồ tể, lập tức
+thành phật cũng là một phương pháp. Anh em có thể học Java, trở thành fanboy OOP rồi một ngày bỗng
+nhưng nhận ra Java như loz.
 
 Giữa các hệ phái luôn có sự giao thoa, kế thừa và phát triển. Cho nên khi ta dùng con mắt OOP để
 nhìn code thì code nào cũng OOP hết. Cái này cần tránh, không phải cứ thấy có class, object, đóng
