@@ -338,12 +338,12 @@ Batch processing thì được tối ưu cho through-put, cho nên latency bởi
 cần GC thì vẫn tốt hơn :) Còn OLTP thì câu chuyện khá phức tạp.
 
 OLTP được tối ưu cho latency, và với số lượng concurrent task lớn. Vì vậy hai tính chất cơ bản cần thỏa mãn là không
-pause quá lâu và không chơi blocking IO. Nếu dùng blocking IO thì phải có green thread. Sở dĩ z/OS (mainframe) và
+pause quá lâu và không chơi blocking I/O. Nếu dùng blocking I/O thì phải có green thread. Sở dĩ z/OS (mainframe) và
 COBOL trên z/OS thỏa mãn điều này là vì nó sử dụng scheduler riêng dạng cooperative, tối ưu cho latency và overhead
 trên mỗi task nhỏ.
 
 Trong khi đó, Windows hoặc Linux có scheduler dạng preemptive, với non-deterministic context switch phi thằng về 
-kernel space. Tất cả đều không tốt cho latency, ta có thể spawn 10k COBOL task trên z/OS và blocking IO thoải mái. 
+kernel space. Tất cả đều không tốt cho latency, ta có thể spawn 10k COBOL task trên z/OS và blocking I/O thoải mái. 
 Với Windows hay Linux thì spawn 10k thread là tự sát.
 
 Scheduling là một vấn đề, tuy nhiên trong bài viết này ta tập trung vào memory management. Thì điều cần thiết
