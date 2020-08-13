@@ -333,7 +333,7 @@ dụng weak pointer hay memory pool.
 
 ## Hướng (2): private heap
 
-Các hệ thống xây dựng với COBOL thì có hai thành phần cơ bản là OLTP (realtime transation) và batch processing.
+Các hệ thống xây dựng với COBOL thì có hai thành phần cơ bản là OLTP (realtime transaction) và batch processing.
 Batch processing thì được tối ưu cho through-put, cho nên latency bởi GC không phải vấn đề quá lớn. Tất nhiên không
 cần GC thì vẫn tốt hơn :) Còn OLTP thì câu chuyện khá phức tạp.
 
