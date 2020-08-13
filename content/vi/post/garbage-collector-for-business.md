@@ -271,7 +271,7 @@ using (var file = new File(...)) { }
 
 ## Object reference update overhead
 
-Mỗi lần update ta cần tăng hoặc giảm counter, tuy nhiên GC thì lại có write-barrier để đảm bảo invarriant.
+Mỗi lần update ta cần tăng hoặc giảm counter, tuy nhiên GC thì lại có write-barrier để đảm bảo invariant.
 Tức là cũng có overhead chứ không phải miễn phí, may ra semispaces kiểu naive như tôi implement cho CAM lúc
 đầu thì không cần write-barrier, nhưng đó là do nó stop-the-world, tức là còn tệ hơn. Đã incremental GC
 thì hầu hết đều cần write-barrier, hoặc read-barrier, hoặc là cả hai :)
