@@ -305,7 +305,7 @@ Kết quả ở đây cho thấy GC cần lượng RAM gấp 6 lần để có t
 
 GC có thể rất nhanh, nhưng chỉ ngon trên server hoặc desktop, khi lượng RAM và điện ta cấp cho nó có phần
 relaxed. So với lợi ích về thời gian và chi phí phát triển mà nó đem lại. Với môi trường mobile như OSX, hoặc
-iOS thì GC chán vô cùng. Một con iPhone với 1GB RAM chạy ngon bằng một con Android 4GB RAM là có thật. Cho
+iOS thì GC chán vô cùng. Một con iPhone với 1GB RAM chạy ngon hơn một con Android 4GB RAM là có thật. Cho
 đến thời điểm hiện tại, không dùng GC vẫn là financial win cho mobile.
 
 # Nhặt rác kiểu CAM
