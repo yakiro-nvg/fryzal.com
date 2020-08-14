@@ -370,7 +370,7 @@ Tuyệt đối tránh việc người thì code Erlang mà tâm hồn Java.
 ---
 
 May mắn là, hai anh COBOL và Erlang ở chỗ này lại tư tưởng lớn gặp nhau. Nếu nhìn vào cách mà z/OS xử lý OLTP, ta
-có thể thấy những điểm tương đồng. Trung tâm của OLTP là CICS transation server. Với nghiệp vụ chia nhỏ thành nhiều
+có thể thấy những điểm tương đồng. Trung tâm của OLTP là CICS transaction server. Với nghiệp vụ chia nhỏ thành nhiều
 transaction program khác nhau và giao tiếp qua channel (như message passing). Mỗi program này có thể coi như một
 actor, với heap riêng.
 
