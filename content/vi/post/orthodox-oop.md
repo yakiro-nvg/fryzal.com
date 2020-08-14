@@ -1,6 +1,6 @@
 +++
 title = "OOP chính thống giáo"
-date = 2020-08-15
+date = 2020-08-14
 draft = false
 authors = ["Nguyen, Giang (G. Yakiro)"]
 
