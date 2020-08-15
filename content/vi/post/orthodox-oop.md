@@ -40,6 +40,8 @@ Method trong OOP được gói giữa 2 dấu ngoặc nhọn, đây là ngôn ng
 lại một số ngôn ngữ như python thì ít đóng gói hơn vì dùng tab và space, có thể gây lỗi biên
 dịch.
 
+LISP thì quá nhiều đóng gói.
+
 ## 2. Tính đa hình (polymorphism)
 
 ```C#
@@ -382,7 +384,7 @@ càng ít abstraction và overhead càng tốt. C/C++ là Assembly, phiên bản
 
 Thực ra cũng không chậm lắm, nếu dùng selector làm method id như [Obj-C](https://www.mulle-kybernetik.com/artikel/Optimization/opti-9.html)
 thì gần như có thể so với lời gọi hàm thông thường vì nó cache được. Cái này chưa bao giờ là vấn đề với
-iOS mà OSX, vốn dựa hoàn toàn trên dynamic dispatch.
+iOS và OSX, vốn dựa hoàn toàn trên dynamic dispatch.
 
 ## Late binding không sợ FBI
 
