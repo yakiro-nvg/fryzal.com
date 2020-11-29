@@ -43,7 +43,7 @@ nhân lực để tham gia phát triển platform cho ô tô. Thế nhưng nói 
 
 # Cách quản lý bộ nhớ
 
-Trừ khi bạn đang làm cái gì đấy nó rất là ...tởm. Thì khả năng cao là bạn đang dùng Turing
+Trừ khi bạn đang làm cái gì đấy nó rất là ...tởm. Thì khả năng cao là bạn đang dùng von-Neumann
 Machine. Hiểu kiểu ngu si như tôi thì bạn có chương trình bao gồm một chuỗi các phép tính
 toán, với input / output được lưu ở cái chỗ mà ta tạm gọi là `bộ nhớ` đi. Cứ giả dụ là ta có
 RAM, khoảng 2GB.
