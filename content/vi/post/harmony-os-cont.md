@@ -72,7 +72,7 @@ Họ đang bị buộc phải vào quá sớm và đốt tiền R&D cũng như �
 dễ lăn ra chết vì hết tiền trong khi thành quả để thằng khác vào sau nó hưởng.
 
 Vậy nên mặc dù bản thân tự nhận là fan của Huawei nhưng thật thà mà nói tôi cũng không
-lạc quan lắm vào tương lai của họ. Hiện tại thì Huawei là một tay chơi cũng khá có số
+lạc quan lắm vào tương lai của họ. Dù hiện tại thì Huawei là một tay chơi cũng khá có số
 má khi dẫn đầu một trong những công nghệ bản lề của IoT là 5G. Trung Quốc cũng đang nổi
 lên là một thiên đường công nghệ.
 
