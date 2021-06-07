@@ -99,7 +99,7 @@ Tất nhiên proposal trên của tôi là cho một ISP ở Việt Nam, nên n�
 của họ là OTT. Kiểu âm mưu bán TvBox để growth xong thành công thì lại quay về bán head
 unit cho ô tô. Nhưng trời đụ không hiểu sao trình bày xong họ kêu là mấy cái em nói bọn
 anh có thiếu gì đâu, "hệ điều hành bọn anh cũng tự làm được rồi", tên cũng đặt xong rồi
-luôn. Tự tin có giác gì "bờ-cạp" với cái công ty mà ai cũng biết là công ty nào ấy đâu.
+luôn. Tự tin có khác gì "bờ-cạp" với cái công ty mà ai cũng biết là công ty nào ấy đâu.
 Nên tôi đành ngậm ngùi đi về với kết luận riêng cho bản thân là thị trường quá non và xanh
 còn mình thì tiến có đèo.
 
