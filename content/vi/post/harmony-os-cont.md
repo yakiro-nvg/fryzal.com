@@ -3,7 +3,7 @@ title = "Vén màn Harmony OS (phần 2)"
 date = 2021-06-07
 draft = false
 authors = ["Nguyen, Giang (G. Yakiro)"]
-featured_image = "/img/harmony_os_2/harmony_os_1_8_n.jpg"
+header = { image = "harmony_os_2/harmony_os_1_8_n.jpg" }
 summary = "Kẻ tiên phong một cách bất đắc dĩ"
 +++
 

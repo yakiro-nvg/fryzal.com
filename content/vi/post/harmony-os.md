@@ -3,7 +3,7 @@ title = "Vén màn Harmony OS"
 date = 2021-06-04
 draft = false
 authors = ["Nguyen, Giang (G. Yakiro)"]
-featured_image = "/img/harmony_os/flying_car.jpg"
+header = { image = "harmony_os/flying_car.jpg" }
 summary = "Android with skin? Hell no!"
 +++
 
