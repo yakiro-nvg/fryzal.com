@@ -52,7 +52,7 @@ qua cloud API của Google.
 
 Công bằng mà nói, push-notification liên quan khá sâu đến cách OS lập lịch cho các
 chương trình, nếu làm không tốt thì sẽ ảnh hưởng đến thời lượng sử dụng pin cũng như
-giảm độ mượt mà của hệ thống. Việc bắt buộc sử dụng một cách duy nhất và tốt nhất sẽ
+giảm độ mượt mà của hệ thống. Việc bắt buộc sử dụng một phương pháp duy nhất và tốt nhất sẽ
 mang lại trải nghiệm tốt hơn hẳn là thả rông cho các ông dev thích làm kiểu gì thì làm.
 
 {{< figure src="/img/harmony_os_2/huawei_hms_core_4.0.jpg" title="Không có GMS, thì phải làm HMS" >}}
