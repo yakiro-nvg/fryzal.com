@@ -1,10 +1,10 @@
 +++
 title = "Vén màn Harmony OS (phần 2)"
 date = 2021-06-07
-draft = true
+draft = false
 authors = ["Nguyen, Giang (G. Yakiro)"]
 
-summary = ""
+summary = "Kẻ tiên phong một cách bất đắc dĩ"
 +++
 
 # Thương chiến Mỹ-Trung
